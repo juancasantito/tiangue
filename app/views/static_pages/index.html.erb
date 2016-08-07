@@ -4,6 +4,12 @@
 <hr />
 
 <!-- Experimenting with image_tag -->
-<% (1..6).each do |n| %>
-  <%= image_tag("bike#{n}.jpg", class: "img-responsive") %>
-<%end%>
+<div class="container-fluid">
+  <div class="row">
+    <% (1..6).each do |n| %>
+      <div class="col-sm-4 col-md-2">
+        <%= image_tag("bike#{n}.jpg", class: "img-responsive") %>
+      </div>
+    <%end%>
+  </div>
+</div>
