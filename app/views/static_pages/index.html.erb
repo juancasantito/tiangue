@@ -3,4 +3,7 @@
 
 <hr />
 
-<%= image_tag("bike1.jpg", class: "img-responsive") %>
+<!-- Experimenting with image_tag -->
+<% (1..6).each do |n| %>
+  <%= image_tag("bike#{n}.jpg", class: "img-responsive") %>
+<%end%>
