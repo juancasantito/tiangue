@@ -1,3 +1,55 @@
+$dark : #212a49;
+$accent : #21e7b6;
+$light-purple: #7883ad;
+$orange : #be7266;
+$purple: #273359;
+$light: white;
+
+
+
+// Navbar styles
+.navbar-inverse {
+
+  background-color: $dark;
+  .navbar-nav
+  {
+    li {
+      a {
+        font-size: 1.2em;
+        color: $light;
+      }
+    }
+  }
+}
+
+.navbar-brand {
+  padding-top: 7px;
+  h2 {
+    margin-top: 0;
+    color: $light;
+  }
+}
+
+// Typography
 h1 {
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+// Footer styles
+footer {
+  background-color: $accent;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 30px;
+  padding: 10px;
+  p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-bottom: 0;
+    color: $light;
+    font-weight: bold;
+  }
 }
