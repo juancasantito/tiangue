@@ -16,17 +16,12 @@
 
 
 /*wrapper styling top margin nav fix*/
-
-$dark : #212a49;
-$accent : #21e7b6;
-$light-purple: #7883ad;
-$orange : #be7266;
-$purple: #273359;
-$light: white;
+@import 'colors';
 
 .wrapper {
   margin: 60px 2% auto;
 }
+
 .shadow {
   -webkit-box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.75);
