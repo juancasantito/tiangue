@@ -19,6 +19,14 @@ $left-radius: $radius 0px 0px $radius;
 
 .deals-section {
   margin-bottom: 50px;
+  a {
+    color: $light;
+  }
+  .button {
+    &:hover {
+      background-color: $accent;
+    }
+  }
 }
 
 .featured-product-info {
@@ -41,21 +49,62 @@ $left-radius: $radius 0px 0px $radius;
     }
   }
 
-  a {
-    color: $light;
-  }
-  .button {
-    &:hover {
-      background-color: $accent;
-    }
-  }
+
 }
+
+@keyframes deal-title {
+  from { background-color: $accent;}
+  to {background-color: $orange;}
+}
+
 .best-deal {
   width: 100%;
   background-color: $light;
   margin-bottom: 0;
-  display: none;
+  height: 640px;
+  h3 {
+    font-size: 2em;
+    font-weight: bold;
+    color: $light;
+    margin-top: 0;
+    padding: 20px;
+    animation-name: deal-title;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  img {
+    max-height: 400px;
+    margin: auto;
+  }
 }
+
+.best-deal-info {
+  background-color: rgba(0, 0, 44, 0.7);
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  width: 90%;
+  margin: auto;
+
+  h4 {
+    color: $light;
+    font-size: 2em;
+    padding-top: 10px;
+  }
+
+  p {
+    font-size: 1.8em;
+    color: $accent;
+    font-weight: normal;
+  }
+
+  a {
+    margin: 10px auto 15px;
+  }
+}
+
 @media (max-width: 992px) and (min-width: 768px) {
   .carousel.slide img,
   .featured-product-info {
@@ -74,9 +123,5 @@ $left-radius: $radius 0px 0px $radius;
   .carousel.slide img,
   .featured-product-info {
     height: 480px;
-  }
-
-  .best-deal {
-    display: block; // Shows the best-deal div in large secreens
   }
 }
