@@ -1,38 +1,82 @@
-// generic styles
+@import "global_styles";
+
+$left-radius: $radius 0px 0px $radius;
+
+
+ // generic styles
 .no-padding {
   padding: 0;
 }
 
+
 // carousel styling
+
 .carousel.slide img {
-  width: 100%;
+      width: 100%;
 }
 
 // Deals section styling
 
-.featured-info {
-  background-color: red;
-  width: 100%;
-  height: 480px;
-  padding-top: 10px;
+.deals-section {
+  margin-bottom: 50px;
 }
 
+.featured-product-info {
+  background-color: $purple;
+  width: 100%;
+  padding: 10px 30px;
+  color: $dark;
+  h2 {
+    padding: 30px;
+    font-size: 4em;
+    color: $light;
+  }
 
-@media (min-width: 992px) {
-  .main-section{
-    width: 1500px
+  p {
+    font-size: 1.8em;
+    font-weight: bolder;
+    strong {
+      font-weight: bold;
+      color: $orange;
+    }
+  }
+
+  a {
+    color: $light;
+  }
+  .button {
+    &:hover {
+      background-color: $accent;
+    }
+  }
+}
+.best-deal {
+  width: 100%;
+  background-color: $light;
+  margin-bottom: 0;
+  display: none;
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  .carousel.slide img,
+  .featured-product-info {
+    height: 356px;
   }
   .carousel.slide img {
-    width: 666px;
-    height: 500px;
+    width: 475px;
+  }
+}
+@media (min-width: 993px) {
+  .carousel.slide img {
+    width: 640px;
+    float: right;
+  }
+  .best-deal,
+  .carousel.slide img,
+  .featured-product-info {
+    height: 480px;
   }
 
-  .deals-section {
-    height: 500px;
-  }
-  .featured-info {
-    background-color: blue;
-    height: 500px;
-    width: 100%;
+  .best-deal {
+    display: block; // Shows the best-deal div in large secreens
   }
 }

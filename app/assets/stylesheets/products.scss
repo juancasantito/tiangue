@@ -2,12 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$dark : #212a49;
-$accent : #21e7b6;
-$light-purple: #7883ad;
-$orange : #be7266;
-$purple: #273359;
-$light: white;
+@import "colors";
 
 .product {
   background-color: $light;

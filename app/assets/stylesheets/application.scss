@@ -14,27 +14,26 @@
  *= require_self
  */
 /*wrapper styling top margin nav fix*/
-@import 'colors';
+@import 'global_styles';
+
+
 .wrapper {
   margin: 60px 2% auto;
 }
 .shadow {
-  -webkit-box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.75);
-  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
 }
+
+
 body {
   background-image: image-url("bg.jpg");
   background-size: cover;
   margin: 0;
   background-attachment: fixed;
 }
-.main-section {
-  margin: auto;
-  h1 {
-    color: $light;
-  }
-}
+
 // Typography
 h1 {
   font-family: 'Lato', sans-serif;

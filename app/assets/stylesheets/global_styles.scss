@@ -1,0 +1,24 @@
+@import "colors";
+
+$radius: 3px;
+
+.main-section {
+  margin: auto;
+  h1 {
+    color: $light;
+  }
+}
+
+.card {
+  background-color: $light;
+  border-radius: $radius;
+  padding-top: 15px;
+}
+
+.button {
+  font-size: 2em;
+  margin: 40px auto 50px;
+  padding: 10px 10px;
+  display: inline-block;
+  border-radius: 20px;
+}
