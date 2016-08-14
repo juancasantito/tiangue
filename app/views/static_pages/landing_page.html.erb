@@ -6,8 +6,8 @@
         <div id="carousel-example-generic" class="carousel slide">
           <!-- Indicators -->
           <ol class="carousel-indicators">
-            <% @products.each_with_index do |product, index| %>
-            <li data-target="#carousel-example-generic <%= 'active' if index == 0 %>" data-slide-to="<%= index + 1 %>"></li>
+            <% @products.each_with_index do |_, index| %>
+            <li data-target="#carousel-example-generic"  data-slide-to="<%= index %>" class="<%= 'active' if index == 0%>"></li>
             <% end %>
           </ol>
 
